@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: black;
+  flex-direction: column;
+}
+
+body>header {
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  background-color: brown;
+  width: 640px;
+}
+
+nav>div {
+  padding: 8px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+nav>div img {
+  margin-right: 10px;
+}
+
+nav>div:nth-child(odd) {
+  background-color: coral;
+}
+
+nav>.button {
+  justify-content: center;
+  font-style: italic;
+  font-weight: bold;
+  border: 4px dotted red;
+  background-color: silver !important;
+  cursor: pointer;
+  width: 100%;
+}
+
+nav>.button:hover {
+  transform: scale(1.1);
+}
+
+#game {
+  display: flex;
+  flex-direction: column;
+}
+
+#game>img {
+  cursor: pointer;
+}
+
+#game>img:last-child {
+  transform: rotate(180deg);
+}
+
+#game>img:hover {
+  transform: scale(1.1);
+}
+
+#game>img:last-child {
+  transform: rotate(180deg);
+}
+
+#game>img:last-child:hover {
+  transform: rotate(180deg) scale(1.1);
+}
+
+#game-view {
+  width: 640px;
+  height: 480px;
+  overflow: hidden;
+  border: 1px solid white;
+  background-color: darkolivegreen;
+}
+
+#game .controls-left-right {
+  display: flex;
+}
+
+#game .controls-left-right img {
+  cursor: pointer;
+}
+
+#game .controls-left-right img:hover {
+  transform: scale(1.1);
+}
+
+#game .controls-left-right>img:last-child {
+  transform: rotate(180deg);
+}
+
+#game .controls-left-right>img:last-child:hover {
+  transform: rotate(180deg) scale(1.1);
+}
